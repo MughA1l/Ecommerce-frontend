@@ -1,0 +1,184 @@
+.cartitems {
+    margin: 100px 170px;
+}
+
+.cartitems hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+
+.cartitems-formate-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0;
+    color: #454544;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.carticon-product-icon {
+    height: 62px;
+}
+
+.cartitems-remove-icon {
+    width: 15px;
+    margin: 0 20px; /* Reduced margin for smaller screens */
+    cursor: pointer;
+}
+
+.cartitems-quantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid rgb(190, 186, 186);
+    background: rgb(252, 184, 184);
+}
+
+.cartitems-down {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin: 100px 0;
+}
+
+.cartitems-total {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0; /* Remove margin for smaller screens */
+    gap: 20px; /* Adjust gap for smaller screens */
+}
+
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.cartitems-total button {
+    width: 263px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: lightcoral;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cartitems-promocode {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartitems-promocode p {
+    color: #5c5c5c;
+}
+
+.cartitems-promobox {
+    width: 100%; /* Full width for smaller screens */
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: rgb(209, 205, 205);
+}
+
+.cartitems-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+    height: 70px;
+}
+
+.cartitems-promobox button {
+    width: 170px;
+    height: 58px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1280px) {
+    .cartitems {
+        margin: 80px 100px; /* Adjust margin */
+    }
+    .cartitems-formate-main {
+        grid-template-columns: 1fr 2fr 1fr 1fr; /* Adjust grid columns */
+        gap: 50px; /* Adjust gap */
+        font-size: 16px; /* Adjust font size */
+    }
+    .cartitems-remove-icon {
+        margin: 0 10px; /* Further reduce margin */
+    }
+    .cartitems-quantity {
+        width: 50px; /* Adjust width */
+        height: 40px; /* Adjust height */
+        font-size: 14px; /* Adjust font size */
+    }
+    .cartitems-total button {
+        width: 220px; /* Adjust button width */
+        height: 50px; /* Adjust button height */
+        font-size: 14px; /* Adjust font size */
+    }
+    .cartitems-promobox input {
+        width: 70%; /* Adjust input width */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cartitems {
+        margin: 60px 50px; /* Further adjust margin */
+    }
+    .cartitems-formate-main {
+        grid-template-columns: 1fr 2fr; /* Simplify grid columns */
+        gap: 30px; /* Adjust gap */
+        font-size: 14px; /* Adjust font size */
+    }
+    .cartitems-remove-icon {
+        display: none; /* Hide remove icon */
+    }
+    .cartitems-quantity {
+        width: 40px; /* Further adjust width */
+        height: 35px; /* Further adjust height */
+        font-size: 12px; /* Adjust font size */
+    }
+    .cartitems-total button {
+        width: 180px; /* Further adjust button width */
+        height: 45px; /* Further adjust button height */
+        font-size: 12px; /* Adjust font size */
+    }
+    .cartitems-promobox {
+        padding-left: 10px; /* Adjust padding */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cartitems {
+        margin: 40px 20px; /* Adjust margin */
+    }
+    .cartitems-formate-main {
+        grid-template-columns: 1fr; /* Stack grid items */
+        gap: 20px; /* Adjust gap */
+        font-size: 12px; /* Adjust font size */
+    }
+    .cartitems-total {
+        gap: 15px; /* Adjust gap */
+    }
+    .cartitems-promobox input {
+        font-size: 12px; /* Adjust font size */
+    }
+    .cartitems-promobox button {
+        font-size: 12px; /* Adjust font size */
+    }
+}

@@ -1,0 +1,117 @@
+/* Existing hero.css styles */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffae22 60%);
+    display: flex;
+}
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+.hero-left p {
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img {
+    width: 105px;
+}
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .hero-left {
+        padding-left: 100px;
+    }
+    .hero-left p {
+        font-size: 80px;
+    }
+    .hero-latest-btn {
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+    }
+    .hero-hand-icon img {
+        width: 80px;
+    }
+}
+
+/* For screens smaller than 800px */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .hero-left {
+        padding-left: 0;
+        align-items: center;
+    }
+    .hero-left p {
+        font-size: 60px;
+    }
+    .hero-latest-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .hero-hand-icon img {
+        width: 60px;
+    }
+}
+
+/* For screens smaller than 500px */
+@media (max-width: 500px) {
+    .hero-left p {
+        font-size: 40px;
+    }
+    .hero-latest-btn {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .hero-hand-icon img {
+        width: 50px;
+    }
+    .hero-left h2 {
+        font-size: 20px;
+    }
+}

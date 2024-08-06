@@ -1,0 +1,68 @@
+.relatedproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.relatedproduct h1 {
+    color: #5c5c5c;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.relatedproduct hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.relatedproduct-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1280px) {
+    .relatedproduct h1 {
+        font-size: 40px; /* Adjust font size */
+    }
+    .relatedproduct hr {
+        width: 150px; /* Adjust hr width */
+    }
+    .relatedproduct-item {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Adjust gap */
+        align-items: center; /* Center align items */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .relatedproduct h1 {
+        font-size: 30px; /* Further adjust font size */
+    }
+    .relatedproduct hr {
+        width: 120px; /* Further adjust hr width */
+    }
+    .relatedproduct-item {
+        margin-top: 30px; /* Adjust margin */
+        gap: 15px; /* Adjust gap */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .relatedproduct h1 {
+        font-size: 24px; /* Adjust font size */
+    }
+    .relatedproduct hr {
+        width: 100px; /* Adjust hr width */
+    }
+    .relatedproduct-item {
+        margin-top: 20px; /* Adjust margin */
+        gap: 10px; /* Adjust gap */
+    }
+}

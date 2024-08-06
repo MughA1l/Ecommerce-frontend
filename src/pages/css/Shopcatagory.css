@@ -1,0 +1,103 @@
+/* Existing Shopcatagory.css styles */
+
+.Shopcategory-banner {
+    display: block;
+    margin: 3vh auto; /* Adjust margin using vh units */
+    width: 80vw; /* Adjust width using vw units */
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+}
+
+.shopcatagory-indexsort {
+    display: flex;
+    margin: 0 10vw; /* Adjust margins using vw units */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcatagory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcatagory-indexsort p span {
+    font-weight: 600;
+}
+
+.shopcatagory-product {
+    margin: 20px 170px; /* Adjust margin using vh units */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Responsive grid columns */
+    row-gap: 80px; /* Adjust gap using vw units */
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1280px */
+@media (max-width: 1280px) {
+    .Shopcategory-banner {
+        width: 85vw;
+    }
+    .shopcatagory-indexsort {
+        margin: 0 8vw;
+    }
+    .shopcatagory-product {
+        margin: 3vh 8vw;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .Shopcategory-banner {
+        width: 90vw;
+    }
+    .shopcatagory-indexsort {
+        margin: 0 6vw;
+    }
+    .shopcatagory-product {
+        margin: 3vh 6vw;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 4vw;
+    }
+}
+
+/* For screens smaller than 800px */
+@media (max-width: 800px) {
+    .Shopcategory-banner {
+        width: 95vw;
+        margin: 2vh auto; /* Adjust margin using vh units */
+    }
+    .shopcatagory-indexsort {
+        margin: 0 4vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vh;
+    }
+    .shopcatagory-product {
+        margin: 2vh 4vw; /* Adjust margin using vh units */
+        grid-template-columns: 1fr;
+        gap: 3vw;
+    }
+    .shopcatagory-sort {
+        padding: 8px 16px;
+    }
+}
+
+/* For screens smaller than 500px */
+@media (max-width: 500px) {
+    .Shopcategory-banner {
+        width: 100vw;
+        margin: 1vh auto; /* Adjust margin using vh units */
+    }
+    .shopcatagory-indexsort {
+        margin: 0 2vw;
+    }
+    .shopcatagory-product {
+        margin: 1vh 2vw; /* Adjust margin using vh units */
+        gap: 2vw;
+    }
+    .shopcatagory-sort {
+        padding: 6px 12px;
+    }
+}
